@@ -7,9 +7,8 @@
                     <button>Demo 1</button>
                 </router-link>
                 <router-link to="/demo2">
-                    <button>Demo 2</button>
+                    <button>🎥 摄像头预览</button>
                 </router-link>
-
             </nav>
         </div>
     </div>
@@ -20,7 +19,6 @@
 </script>
 
 <style scoped>
-
 .home-page {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,7 @@
     box-sizing: border-box;
     background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
     /* 更柔和的渐变 */
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     /* 使用更现代的字体 */
 }
 

@@ -11,7 +11,7 @@
             </button>
             <button v-else @click="stopCamera" class="btn stop-btn">关闭摄像头</button>
         </div>
-
+        <!--如果 errorMsg 为真（即有错误信息）： 渲染结果是 <p class="status error">摄像头访问被拒绝</p> -->
         <p class="status" :class="{ error: errorMsg }">
             {{ errorMsg || (isCameraOn ? "摄像头已开启 ✅" : "摄像头未开启 ❌") }}
         </p>
