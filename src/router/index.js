@@ -5,6 +5,7 @@ import CameraDemo from "@/views/CameraDemo.vue";
 import PiniaDemo from "@/views/PiniaDemo.vue";
 import ElementsPlusDemo from "@/views/ElementsPlusDemo.vue";
 import AxiosDemo from "@/views/AxiosDemo.vue";
+import FontClassIcon from "@/views/FontClassIcon.vue";
 
 const routes = [
     {
@@ -36,6 +37,11 @@ const routes = [
         path: "/axiosDemo",
         name: "AxiosDemo",
         component: AxiosDemo,
+    },
+    {
+        path: "/fontClassIcon",
+        name: "FontClassIcon",
+        component: FontClassIcon,
     },
     {
         path: "/",

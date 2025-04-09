@@ -18,6 +18,9 @@
                 <router-link to="/axiosDemo">
                     <button>AxiosDemo测试</button>
                 </router-link>
+                <router-link to="/fontClassIcon">
+                    <button>使用阿里图标库</button>
+                </router-link>
             </nav>
         </div>
     </div>
