@@ -3,6 +3,7 @@ import HomePage from "@/views/HomePage.vue";
 import Demo1 from "@/views/Demo1.vue";
 import Demo2 from "@/views/Demo2.vue";
 import PiniaDemo from "@/views/PiniaDemo.vue";
+import ElementsPlusDemo from "@/views/ElementsPlusDemo.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/piniaDemo",
         name: "PiniaDemo",
         component: PiniaDemo,
+    },
+    {
+        path: "/elementsPlusDemo",
+        name: "ElementsPlusDemo",
+        component: ElementsPlusDemo,
     },
     {
         path: "/",

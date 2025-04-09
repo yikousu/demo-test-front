@@ -12,6 +12,9 @@
                 <router-link to="/piniaDemo">
                     <button>Pinia测试</button>
                 </router-link>
+                <router-link to="/elementsPlusDemo">
+                    <button>ElementsPlus测试</button>
+                </router-link>
             </nav>
         </div>
     </div>
