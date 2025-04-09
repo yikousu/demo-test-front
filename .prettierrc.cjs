@@ -49,11 +49,24 @@ module.exports = {
 
     // 控制是否对引用代码中的引号进行转换（默认false）
     embeddedLanguageFormatting: "auto",
+    // 添加 parser override（关键）
     overrides: [
         {
             files: "*.vue",
             options: {
                 parser: "vue",
+            },
+        },
+        {
+            files: "*.html",
+            options: {
+                parser: "html",
+            },
+        },
+        {
+            files: "*.md",
+            options: {
+                parser: "markdown",
             },
         },
     ],

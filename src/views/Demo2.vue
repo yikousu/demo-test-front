@@ -46,7 +46,7 @@ const startCamera = async () => {
 
 const stopCamera = () => {
     if (stream) {
-        stream.getTracks().forEach((track) => track.stop());
+        stream.getTracks().forEach(track => track.stop());
         videoRef.value.srcObject = null;
         isCameraOn.value = false;
     }
