@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "@/views/HomePage.vue";
 import Demo1 from "@/views/Demo1.vue";
-import Demo2 from "@/views/Demo2.vue";
+import CameraDemo from "@/views/CameraDemo.vue";
 import PiniaDemo from "@/views/PiniaDemo.vue";
 import ElementsPlusDemo from "@/views/ElementsPlusDemo.vue";
+import AxiosDemo from "@/views/AxiosDemo.vue";
 
 const routes = [
     {
@@ -17,9 +18,9 @@ const routes = [
         component: Demo1,
     },
     {
-        path: "/demo2",
-        name: "Demo2",
-        component: Demo2,
+        path: "/cameraDemo",
+        name: "CameraDemo",
+        component: CameraDemo,
     },
     {
         path: "/piniaDemo",
@@ -30,6 +31,11 @@ const routes = [
         path: "/elementsPlusDemo",
         name: "ElementsPlusDemo",
         component: ElementsPlusDemo,
+    },
+    {
+        path: "/axiosDemo",
+        name: "AxiosDemo",
+        component: AxiosDemo,
     },
     {
         path: "/",

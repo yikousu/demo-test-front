@@ -15,6 +15,9 @@
                 <router-link to="/elementsPlusDemo">
                     <button>ElementsPlus测试</button>
                 </router-link>
+                <router-link to="/axiosDemo">
+                    <button>AxiosDemo测试</button>
+                </router-link>
             </nav>
         </div>
     </div>
