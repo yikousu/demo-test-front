@@ -7,7 +7,10 @@
                     <button>Demo 1</button>
                 </router-link>
                 <router-link to="/demo2">
-                    <button>🎥 摄像头预览</button>
+                    <button>摄像头预览</button>
+                </router-link>
+                <router-link to="/piniaDemo">
+                    <button>Pinia测试</button>
                 </router-link>
             </nav>
         </div>
