@@ -3,6 +3,8 @@
     <button @click="goBack" class="back-button">返回主页</button>
     <h1>自定义指令</h1>
     <input v-focus placeholder="我自动获得焦点了" />
+
+    <div v-draggable class="box">拖我</div>
   </div>
 </template>
 
@@ -39,5 +41,15 @@ const goBack = () => {
 h1 {
   margin-top: 60px;
   /* 避免标题和返回按钮重叠 */
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #42b983;
+  color: white;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 8px;
 }
 </style>
