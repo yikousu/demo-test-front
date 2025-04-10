@@ -10,3 +10,10 @@ app.use(router); // 使用路由
 app.use(createPinia()); // 使用pinia
 app.use(ElementPlus); // 使用element-plus
 app.mount("#app");
+
+// 全局的指令  可以局部
+app.directive("focus", {
+  mounted(el) {
+    el.focus();
+  },
+});
