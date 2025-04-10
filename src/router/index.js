@@ -50,6 +50,11 @@ const routes = [
     component: DirectiveDemo,
   },
   {
+    path: "/routerDemo",
+    name: "RouterDemo",
+    component: () => import("@/views/RouterDemo.vue"),
+  },
+  {
     path: "/",
     redirect: "/home",
   },

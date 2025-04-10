@@ -24,6 +24,9 @@
         <router-link to="/directiveDemo">
           <button>自定义指令</button>
         </router-link>
+        <router-link to="/routerDemo">
+          <button>编程式导航</button>
+        </router-link>
       </nav>
     </div>
   </div>
