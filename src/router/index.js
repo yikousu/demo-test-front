@@ -7,6 +7,7 @@ import ElementsPlusDemo from "@/views/ElementsPlusDemo.vue";
 import AxiosDemo from "@/views/AxiosDemo.vue";
 import FontClassIcon from "@/views/FontClassIcon.vue";
 import DirectiveDemo from "@/views/DirectiveDemo.vue";
+import CanvasDemo from "@/views/CanvasDemo.vue";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: "/directiveDemo",
     name: "DirectiveDemo",
     component: DirectiveDemo,
+  },
+  {
+    path: "/canvasDemo",
+    name: "CanvasDemo",
+    component: CanvasDemo,
   },
   {
     path: "/routerDemo",

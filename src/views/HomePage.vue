@@ -27,6 +27,9 @@
         <router-link to="/routerDemo">
           <button>编程式导航</button>
         </router-link>
+        <router-link to="/canvasDemo">
+          <button>Canvas</button>
+        </router-link>
       </nav>
     </div>
   </div>
