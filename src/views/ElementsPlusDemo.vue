@@ -2,6 +2,7 @@
   <div class="demo-container">
     <button @click="goBack" class="back-button">返回主页</button>
     <div class="mb-4">
+      <h1>按钮</h1>
       <el-button plain>Plain</el-button>
       <el-button type="primary" plain>Primary</el-button>
       <el-button type="success" plain>Success</el-button>
@@ -11,6 +12,12 @@
     </div>
 
     <div>
+      <h1>模态框ElMessage</h1>
+      <el-button type="primary" plain @click="clicked">Primary</el-button>
+    </div>
+
+    <div>
+      <h1>tab-pane</h1>
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane label="User" name="first">User</el-tab-pane>
         <el-tab-pane label="Config" name="second">Config</el-tab-pane>
@@ -33,7 +40,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import type { TabsPaneContext } from "element-plus";
+import { ElMessage, type TabsPaneContext } from "element-plus";
 const activeName = ref("first");
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
@@ -48,9 +55,17 @@ const count = ref(0);
 const load = () => {
   count.value += 2;
 };
+
+const clicked = () => {
+  ElMessage.success("点击了按钮");
+};
 </script>
 
 <style scoped>
+div {
+  border: 2px solid red;
+}
+
 .demo-container {
   padding: 20px;
   text-align: center;
@@ -71,7 +86,7 @@ const load = () => {
 }
 
 h1 {
-  margin-top: 60px;
+  margin-top: 20px;
   /* 避免标题和返回按钮重叠 */
 }
 
